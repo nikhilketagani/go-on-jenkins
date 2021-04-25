@@ -9,6 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                 bat 'echo hello'
                 bat 'go build'
             }
         }
